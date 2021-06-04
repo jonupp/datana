@@ -77,7 +77,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -130,7 +130,7 @@ window.onload = wrap_img;
 No, in some cases it is not a good idea to use a random sample for the validation set. In time series forecasting for example it is not a good idea because taking out some random points for the validation set makes a trend incomplete. In this case, it would be better to cut out multiple a connected series of data points as validation set.</p>
 </li>
 <li><p>What is overfitting? Provide an exmaple.  <br />
-The model performs very well on the training set but very poorly on the validation set. It has not learned but memorized.</p>
+The model performs very well on the training set but very poorly on the validation set. It has not learned but memorized. As an example one could imagine that there is an overfitting model that can decide whether an image was taken during the day or the night. If one would input an image from the training set it is very likely that the image is classified correctly. However, if one would input a random image e.g. from google image search, that was not part of the training set, it is very likely that the image is classified wrongly.</p>
 </li>
 <li><p>What is a metric? How does it differ from "loss"?  <br />
 A metric is used to rate the performance of a model. The loss-function is used within training to determine how well the choosen parameters are. The goal of the algorithms is to minimize the loss-function. Metrics are used by humans while the loss-function is used by computers.</p>
@@ -142,7 +142,7 @@ A pretrained model is a model that was trained using a large dataset. It can be 
 The head of a model is the output layer of a model.</p>
 </li>
 <li><p>What kinds of features do the early layers of a CNN find? How about the later layers?  <br />
-The early layers of a CNN find basic structures like colors or lines. The later layers use this basic structures to detec more advanced structures like for example rectangles.</p>
+The early layers of a CNN find basic structures like colors or lines. The later layers use this basic structures to detect more advanced structures like for example rectangles.</p>
 </li>
 <li><p>Are image models only useful for photos?  <br />
 No, many things like for example sound can be converted into an image.</p>
@@ -166,7 +166,7 @@ Segmentation is the process of partitioning the image into different objects. Fo
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Jupyter-Notebook">Jupyter Notebook<a class="anchor-link" href="#Jupyter-Notebook"> </a></h3><p>I did not know that it is possible to use Jupyter Notebooks to write a Blog. I also was suprised that Jupyther Notebooks are serialized as JSON. Getting familiar with Google Colab was a bit frustrating at the beginning. Nevertheless I think it is a useful tool to test machine learning libraries in a fast way because many libraries are already preinstalled.</p>
+<h3 id="Jupyter-Notebook">Jupyter Notebook<a class="anchor-link" href="#Jupyter-Notebook"> </a></h3><p>I did not know that it is possible to use Jupyter Notebooks to write a Blog. I also was suprised that Jupyter Notebooks are serialized as JSON. Getting familiar with Google Colab was a bit frustrating at the beginning. Nevertheless I think it is a useful tool to test machine learning libraries in a fast way because many libraries are already preinstalled.</p>
 <h3 id="Deep-Learning">Deep Learning<a class="anchor-link" href="#Deep-Learning"> </a></h3><p>I already knew that Deep Learning Models are blackboxes, but I didn't know that there is a variety of tools (Lime, SHAP) that make it possible to (more or less) comprehend how a Deep Learning Model came to a certain conclusion.</p>
 
 </div>
