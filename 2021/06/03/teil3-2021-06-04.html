@@ -129,7 +129,7 @@ window.onload = wrap_img;
 <li><p>Can we always use a random sample for a validation set? Why or why not?  <br />
 No, in some cases it is not a good idea to use a random sample for the validation set. In time series forecasting for example it is not a good idea because taking out some random points for the validation set makes a trend incomplete. In this case, it would be better to cut out multiple a connected series of data points as validation set.</p>
 </li>
-<li><p>What is overfitting? Provide an exmaple.  <br />
+<li><p>What is overfitting? Provide an example.  <br />
 The model performs very well on the training set but very poorly on the validation set. It has not learned but memorized. As an example one could imagine that there is an overfitting model that can decide whether an image was taken during the day or the night. If one would input an image from the training set it is very likely that the image is classified correctly. However, if one would input a random image e.g. from google image search, that was not part of the training set, it is very likely that the image is classified wrongly.</p>
 </li>
 <li><p>What is a metric? How does it differ from "loss"?  <br />
